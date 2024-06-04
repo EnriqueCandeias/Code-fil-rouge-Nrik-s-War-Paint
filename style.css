@@ -1,0 +1,208 @@
+body{
+    background-color: #AB5454;
+    color: #000000;
+    font-family: Caveat Brush;
+}
+
+
+header {
+    margin: 0px;
+}
+
+.main.content {
+    margin-bottom: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.navbar {
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #666666 0%, #000000 100%);
+    background: linear-gradient(to bottom, #666666 0%, #000000 100%);
+}
+
+.navtop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    margin: px;
+}
+
+.container-text {
+    text-align: center;
+    background-color: #8E5454;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.container-text-lore {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8E5454;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Ajustez cette hauteur selon vos besoins */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container-main1 {
+    background-color: #8E5454;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-main2 {
+    background-color: #8E5454;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-main2 {
+    width: 100%; /* ou une autre valeur comme '50%' ou '300px' selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+    max-width: 600px; /* Limite la largeur maximale de l'image, ajustez cette valeur selon vos besoins */
+}
+
+.container-main3 {
+    background-color: #8E5454;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-main3 {
+    width: 100%; /* ou une autre valeur comme '50%' ou '300px' selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+    max-width: 600px; /* Limite la largeur maximale de l'image, ajustez cette valeur selon vos besoins */
+    border-radius: 20px;
+}
+
+.logo-bottom {
+    width: 30px; /* ou une autre valeur comme '50%' ou '300px' selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+    max-width: 200px; /* Limite la largeur maximale de l'image, ajustez cette valeur selon vos besoins */
+}
+
+.footer-content {
+    margin: 2px;
+    line-height:17px;
+    color: white;
+}
+
+.btn-group-vertical {
+    margin: auto;
+    width: fit-content;
+    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+}
+
+
+.btn-lg {
+    font-size: 30px; /* Augmente la taille du texte */
+    padding: 10px 20px; /* Augmente l'espace autour du texte */
+    border: none; /* Supprime la bordure */
+    background-color: transparent; /* Supprime le fond */
+    color: black; /* Change la couleur du texte en noir */
+}
+
+.search-text {
+    color: black; /* Couleur du texte */
+}
+
+.search-button {
+    border-color: black; /* Couleur de la bordure */
+    height: 100%; /* Hauteur égale à la barre de recherche */
+    margin-top: 0; /* Ajustement de la marge pour aligner correctement le bouton avec la barre de recherche */
+    border-top-left-radius: 0; /* Supprimer le coin arrondi supérieur gauche */
+    border-bottom-left-radius: 0; /* Supprimer le coin arrondi inférieur gauche */
+}
+
+.button-lore img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.button-40000 img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container-mes-photos {
+    position: relative;
+    display: inline-block;
+}
+
+.image-mes-photos {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.button-mes-photos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 153px;
+    padding: 10px 20px;
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #666666 0%, #000000 100%);
+    background: linear-gradient(to bottom, #666666 0%, #000000 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+    font-size: 20px;
+}
+
+
+
