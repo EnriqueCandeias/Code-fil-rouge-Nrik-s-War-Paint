@@ -14,52 +14,53 @@
     <link href="normalize.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body>
+<body class="body-content">
+
     <nav class="navbar navtop">
         <div class="container-fluid d-flex">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-house fa-2x" style="color: red;"></i></a>
+            <a class="navbar-brand" href="Accueil.html"><i class="fa-solid fa-house fa-2x" style="color: red;"></i></a>
             <div class="me-auto"></div>
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-magnifying-glass fa-2x" style="color: red;"></i></a>
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-bars fa-2x" style="color: red;"></i></a>
+            <a class="navbar-brand" href="Menu recherche.html"><i class="fa-solid fa-magnifying-glass fa-2x" style="color: red;"></i></a>
+            <a class="navbar-brand" href="Menu déroulant.html"><i class="fa-solid fa-bars fa-2x" style="color: red;"></i></a>
         </div>
     </nav>
 
     <header>
         <div class="container-header">
-            <h1 style="font-size: 50px; margin-top: 50px; margin-bottom: 0px;">Nrik War Paint</h1>
+            <h1 style="font-size: 50px; margin-top: 80px; margin-bottom: 0px;">Nrik War Paint</h1>
             <img src="Icone, image etc/Icone/LogoNrikwarpaint-removebg-preview.png" style="margin: 20px;" alt="Logo Nrik War Paint" width="120">
             <div class="container-text">
                 <p>Bienvenue dans la section Lore de notre site, dédiée aux récits épiques et aux légendes des univers de Warhammer 40,000, Age of Sigmar, et Le Seigneur des Anneaux. Plongez au cœur de l'histoire riche et complexe de ces mondes fascinants, où la guerre, la magie et l'héroïsme s'entrelacent pour créer des sagas inoubliables. Découvrez les origines des grandes factions, les batailles légendaires, et les personnages emblématiques qui peuplent ces univers. Que vous soyez un novice curieux ou un vétéran passionné, laissez-vous emporter par les récits captivants qui donnent vie à vos figurines préférées.</p>
             </div>
         </div>
     </header>
-
-    <div class="container-lore">
-        <div class="row justify-content-between">
-            <div class="col-md-5 mb-3">
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
                 <div class="button-lore text-center">
-                    <img src="Icone, image etc/Illustration global age of sigmar/ageofsigmarlore.jpg" alt="Warhammer - Age of Sigmar">
-                    <p>Warhammer - Age of Sigmar</p>
+                    <a href="Lore - Age of Sigmar.html">
+                        <img src="Icone, image etc/Illustration global age of sigmar/ageofsigmarlore.jpg" alt="Warhammer - Age of Sigmar">
+                        <p style="color: aliceblue; font-size: 24px">Warhammer - Age of Sigmar</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-md-5 mb-3">
+            <div class="col-md-4 mb-3">
                 <div class="button-lore text-center">
-                    <img src="Icone, image etc/Vrac/seigneurdesanneauxlore.jpg" alt="Le seigneur des anneaux">
-                    <p>Le seigneur des anneaux</p>
+                    <a href="Lore - Le seigneur des anneaux.html">
+                        <img src="Icone, image etc/Vrac/seigneurdesanneauxlore.jpg" alt="Le seigneur des anneaux">
+                        <p style="color: aliceblue; font-size: 24px">Le seigneur des anneaux</p>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-5 mb-3">
+            <div class="col-md-4 mb-3">
                 <div class="button-40000 text-center">
-                    <img src="Icone, image etc/Vrac/warhammer40000lore.jpg" alt="Warhammer 40 000">
-                    <p style="margin-bottom: 50px;">Warhammer 40 000</p>
+                    <a href="Lore - Warhammer 40 000.html">
+                        <img src="Icone, image etc/Vrac/warhammer40000lore.jpg" alt="Warhammer 40 000">
+                        <p style="color: aliceblue; font-size: 24px">Warhammer 40 000</p>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-
-    <main>
         
 
     </main>
@@ -69,14 +70,16 @@
 </body>
 
 <footer>
-    <nav class="navbar">
+    <nav class="footer navbar">
         <div class="container-fluid d-flex">
-            <img src="Icone, image etc/Icone/LogoNrikwarpaint-removebg-preview.png" alt="Logo" class="logo-bottom">
+            <a href="Accueil.html">
+                <img src="Icone, image etc/Icone/LogoNrikwarpaint-removebg-preview.png" alt="Logo" class="logo-bottom">
+            </a>
             <p class="footer-content">Copyright © 2024 <br> droits réservés.</p>
             <img src="Icone, image etc/Icone/facebook.png" alt="Logo" class="logo-bottom footer-content">
             <img src="Icone, image etc/Icone/instagram.png" alt="Logo" class="logo-bottom footer-content">
             <img src="Icone, image etc/Icone/X.png" alt="Logo" class="logo-bottom footer-content">
-            <p class="footer-content">Acceuil</p>
+            <p class="footer-content"><a href="Accueil.html">Acceuil</p></a>
             <p class="footer-content">Contact</p>
             <p class="footer-content">FAQ</p>
         </div>

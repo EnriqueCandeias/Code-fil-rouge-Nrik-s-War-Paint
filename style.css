@@ -9,8 +9,8 @@ header {
     margin: 0px;
 }
 
-.main.content {
-    margin-bottom: 100px;
+.container {
+    padding-bottom: 80px;
 }
 
 footer {
@@ -40,7 +40,6 @@ footer {
     align-items: center;
     text-align: center;
     padding: 8px;
-    margin: px;
 }
 
 .container-text {
@@ -50,19 +49,49 @@ footer {
     line-height: 24px;
     padding: 8px;
     border-radius: 20px;
-    color: rgb(0, 0, 0);
-    margin: 10px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
 .container-text-lore {
+    background-image: url('Icone, image etc/Best.jpg');
+    background-size: cover;        /* Couvre l'ensemble du conteneur */
+    background-repeat: repeat;  /* Empêche la répétition de l'image */
+    background-position: top;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #8E5454;
     font-size: 20px;
     line-height: 24px;
     padding: 8px;
     border-radius: 20px;
+    border: 8px solid #271d19;
     color: rgb(0, 0, 0);
-    margin: 10px;
+    margin-bottom: 10px;
+    max-width: 100%; /* Limite la largeur du conteneur à 100% de la largeur du parent */
+    overflow: hidden; /* Masque le contenu qui dépasse du conteneur */
+}
+
+@media (max-width: 766px) {
+    .container-text-lore {
+        background-image: url('Icone, image etc/Best.jpg'); /* Changer l'image de fond pour les petits écrans */
+        background-size: contain; /* Ajuster la taille de l'image de fond */
+        background-position: center; /* Centrer l'image de fond */
+        font-size: 20px; /* Ajuster la taille de la police si nécessaire */
+        line-height: 22px; /* Ajuster la hauteur de ligne si nécessaire */
+    }
+}
+
+
+.container-text-lore img {
+    margin: 0 auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur du conteneur */
+    height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour conserver les proportions */
+    border-radius: 20px;
+}
+
+.container-text-lore img {
+    float: right; /* Pour aligner l'image à droite */
+    margin: 0 0 10px 10px; /* Pour ajouter de l'espace autour de l'image */
+    border-radius: 20px; /* Pour ajouter une bordure arrondie à l'image */
 }
 
 .carousel-inner img {
@@ -76,7 +105,7 @@ footer {
     background-color: #8E5454;
     border-radius: 20px;
     padding: 15px;
-    margin: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +116,7 @@ footer {
     background-color: #8E5454;
     border-radius: 20px;
     padding: 15px;
-    margin: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,8 +133,6 @@ footer {
     background-color: #8E5454;
     border-radius: 20px;
     padding: 10px;
-    margin: 10px;
-    margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,5 +231,27 @@ footer {
     font-size: 20px;
 }
 
+a {
+    color: inherit; /* Hérite de la couleur du parent */
+    text-decoration: none; /* Enlève la sous-ligne */
+}
 
+a:hover {
+    color: #313234; /* Change la couleur lors du survol */
+    text-decoration: none; /* Ajoute une sous-ligne lors du survol */
+}
 
+.mb-80 {
+    margin-bottom: 80px;
+  }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.align-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
