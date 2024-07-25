@@ -1,0 +1,449 @@
+body{
+    background-color: #AB5454;
+    color: #000000;
+    font-family: Caveat Brush;
+}
+
+main {
+    padding-top: 170px;
+}
+
+header {
+    margin: 0px;
+}
+
+.container {
+    padding-bottom: 80px;
+}
+
+
+#myFooter {
+    position: fixed;
+    bottom: -100px; /* Déplace le footer hors de la vue initialement */
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    transition: bottom 0.3s ease; /* Transition douce pour l'animation */
+}
+
+
+.navbar {
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #666666 0%, #000000 100%);
+    background: linear-gradient(to bottom, #666666 0%, #000000 100%);
+}
+
+.navtop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar-brand-title {
+    font-size: 50px;
+    font-weight: lighter;
+    color: #F44336;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.search-icon i {
+    font-size: 16px;
+}
+
+.search-bar input {
+    padding: 10px 120px 10px 30px; /* Ajustement des espacements pour laisser de la place à l'icône */
+    border: 2px solid #c5baba;
+    border-radius: 4px;
+    width: 150%; /* La largeur de la barre de recherche prendra la taille du conteneur parent */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #F44336;
+    font-size: 30px;
+}
+
+@media (max-width: 472px) {
+    .navbar-desktop {
+        display: none !important;
+    }
+
+    .logo-nav {
+        display: none !important;
+    }
+
+    .m-0 {
+        font-size: xx-large !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none !important;
+    }
+
+    .footer-content {
+        margin: 4px !important;
+        font-size: x-small;
+        line-height:17px;
+        color: rgb(8, 8, 8);
+    }
+}
+
+@media (min-width: 769px) {
+   .navbar-smartphone {
+        display: none;
+   }
+
+   .container-header-smartphone {
+        display: none;
+   }
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    padding: 8px;
+}
+
+.container-text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #8E5454;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.container-text-outil-aos {
+    background-image: url('/Icone, image etc/Best.jpg');
+    background-size: cover;        /* Couvre l'ensemble du conteneur */
+    background-repeat: repeat;  /* Empêche la répétition de l'image */
+    background-position: top;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #8E5454;
+    font-size: 22px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 8px solid #271d19;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.container-text-lore {
+    background-image: url('/Icone, image etc/Best.jpg');
+    background-size: cover;        /* Couvre l'ensemble du conteneur */
+    background-repeat: repeat;  /* Empêche la répétition de l'image */
+    background-position: top;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 8px solid #271d19;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    max-width: 100%; /* Limite la largeur du conteneur à 100% de la largeur du parent */
+    overflow: hidden; /* Masque le contenu qui dépasse du conteneur */
+}
+
+@media (max-width: 766px) {
+    .container-text-lore {
+        background-image: url('/Icone, image etc/Best.jpg'); /* Changer l'image de fond pour les petits écrans */
+        background-size: contain; /* Ajuster la taille de l'image de fond */
+        background-position: center; /* Centrer l'image de fond */
+        font-size: 20px; /* Ajuster la taille de la police si nécessaire */
+        line-height: 22px; /* Ajuster la hauteur de ligne si nécessaire */
+    }
+
+    .container-text-lore-40k {
+        background-image: url('/Icone, image etc/Best.jpg'); /* Changer l'image de fond pour les petits écrans */
+        background-size: contain; /* Ajuster la taille de l'image de fond */
+        background-position: center; /* Centrer l'image de fond */
+        font-size: 20px; /* Ajuster la taille de la police si nécessaire */
+        line-height: 22px; /* Ajuster la hauteur de ligne si nécessaire */
+    }
+}
+
+
+
+
+.container-text-lore img {
+    margin: 0 auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur du conteneur */
+    height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour conserver les proportions */
+    border-radius: 20px;
+    float: right; /* Pour aligner l'image à droite */
+    margin: 0 0 10px 10px; /* Pour ajouter de l'espace autour de l'image */
+}
+
+
+.container-text-lore-40K {
+    background-image: url('/Icone, image etc/dark-grunge-style-scratched-metal-surface_1048-12951.jpg');
+    background-size: cover;        /* Couvre l'ensemble du conteneur */
+    background-repeat: repeat;  /* Empêche la répétition de l'image */
+    background-position: top;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 8px solid #d4d0cf;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    max-width: 100%; /* Limite la largeur du conteneur à 100% de la largeur du parent */
+    overflow: hidden; /* Masque le contenu qui dépasse du conteneur */
+}
+
+.container-text-lore-40K img {
+    margin: 0 auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur du conteneur */
+    height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour conserver les proportions */
+    border-radius: 20px;
+}
+
+.container-text-lore-40K img {
+    float: right; /* Pour aligner l'image à droite */
+    margin: 0 0 10px 10px; /* Pour ajouter de l'espace autour de l'image */
+    border-radius: 20px; /* Pour ajouter une bordure arrondie à l'image */
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Ajustez cette hauteur selon vos besoins */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container-main1 {
+    background-color: #8E5454;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-main2 {
+    background-color: #8E5454;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-main2 {
+    width: 100%; /* ou une autre valeur comme '50%' ou '300px' selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+    max-width: 600px; /* Limite la largeur maximale de l'image, ajustez cette valeur selon vos besoins */
+}
+
+.container-main3 {
+    background-color: #8E5454;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-main3 {
+    width: 100%; /* ou une autre valeur comme '50%' ou '300px' selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+    max-width: 600px; /* Limite la largeur maximale de l'image, ajustez cette valeur selon vos besoins */
+    border-radius: 20px;
+}
+
+.logo-bottom {
+    width: 30px; /* ou une autre valeur comme '50%' ou '300px' selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+    max-width: 200px; /* Limite la largeur maximale de l'image, ajustez cette valeur selon vos besoins */
+}
+
+.footer-content {
+    margin: 10px;
+    line-height:17px;
+    color: white;
+}
+
+.btn-group-vertical {
+    margin: auto;
+    width: fit-content;
+    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+}
+
+
+.btn-lg {
+    font-size: 30px; /* Augmente la taille du texte */
+    padding: 10px 20px; /* Augmente l'espace autour du texte */
+    border: none; /* Supprime la bordure */
+    background-color: transparent; /* Supprime le fond */
+    color: black; /* Change la couleur du texte en noir */
+}
+
+.search-text {
+    color: black; /* Couleur du texte */
+}
+
+.search-button {
+    border-color: black; /* Couleur de la bordure */
+    height: 100%; /* Hauteur égale à la barre de recherche */
+    margin-top: 0; /* Ajustement de la marge pour aligner correctement le bouton avec la barre de recherche */
+    border-top-left-radius: 0; /* Supprimer le coin arrondi supérieur gauche */
+    border-bottom-left-radius: 0; /* Supprimer le coin arrondi inférieur gauche */
+}
+
+.button-lore img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.button-40000 img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container-mes-photos {
+    position: relative;
+    display: inline-block;
+}
+
+.image-mes-photos {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.button-mes-photos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 153px;
+    padding: 10px 20px;
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #666666 0%, #000000 100%);
+    background: linear-gradient(to bottom, #666666 0%, #000000 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+    font-size: 20px;
+}
+
+a {
+    color: inherit; /* Hérite de la couleur du parent */
+    text-decoration: none; /* Enlève la sous-ligne */
+}
+
+a:hover {
+    color: #313234; /* Change la couleur lors du survol */
+    text-decoration: none; /* Ajoute une sous-ligne lors du survol */
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+  }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.align-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px; /* Largeur maximale de la grille pour éviter l'étirement excessif */
+    margin: 0 auto; /* Centrer la grille sur la page */
+    padding: 20px; /* Espacement autour de la grille */
+}
+.grid-item {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Pour gérer le débordement de l'image */
+}
+.grid-item img {
+    width: 100%; /* Pour que l'image remplisse son conteneur */
+    height: auto; /* Hauteur automatique pour conserver l'aspect ratio */
+    display: block; /* Pour éviter les espaces inattendus sous les images */
+    object-fit: cover; /* Assure que l'image remplit complètement le conteneur en conservant l'aspect ratio */
+    transition: transform 0.2s ease-in-out; /* Pour une transition douce au survol */
+}
+.grid-item:hover img {
+    transform: scale(1.1); /* Effet de zoom au survol de l'image */
+}
+
+.card-outil {
+    margin: 20px; /* Ajoute une marge en bas de chaque carte */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+
+.card-title-outil {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center; /* Centre le texte à l'intérieur de la carte */
+}
